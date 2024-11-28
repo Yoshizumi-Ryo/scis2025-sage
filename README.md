@@ -1,2 +1,7 @@
 # scis2025-sage
-A high-degree isogeny with a domain as a  product of elliptic curves
+
+このリポジトリは[SCIS2025](https://www.iwsec.org/scis/2025/index.html)で発表したアルゴリズムのSageMathによる実装である. 
+
+(This repository contains the implementation of the algorithm in SageMath presented at [SCIS2025](https://www.iwsec.org/scis/2025/index_en.html).)
+
+
