@@ -1,13 +1,22 @@
-# scis2025-sage
+# $(\ell,\ell)$-isogeny from a product of ellptic curves
 
-このパッケージは[SCIS2025](https://www.iwsec.org/scis/2025/index.html)で発表したアルゴリズムのSageMathによる実装である. アルゴリズムの詳しい内容は(参加者のみが見れる)予稿をご覧ください. 
+このパッケージは[SCIS2025](https://www.iwsec.org/scis/2025/index.html)で吉住(九州大学)が発表したアルゴリズムのSageMathによる実装です. アルゴリズムの詳しい内容は(参加者のみが見れる)予稿を参照します. 
 
-This package contains the implementation of the algorithm in SageMath presented at [SCIS2025](https://www.iwsec.org/scis/2025/index_en.html).The detailed contents of the algorithm can be found in the proceedings, which are accessible only to participants.
+This package contains the implementation of the algorithm in SageMath presented at [SCIS2025](https://www.iwsec.org/scis/2025/index_en.html) by Ryo Yoshizumi. The detailed contents of the algorithm can be found in the proceedings, which are accessible only to participants.
 
 
-## Usage 
+## Content 
 
-By writing the following command, you can compute $(\ell,\ell)$-isogeny from $E_0\times E_0$. 
+In this package, there is functions to compute $(\ell,\ell)$-isogeny from a product of ellptic curves. The main module is `func_isogeny.py`. For the overall flow, please refer to `test.py`.
+
+This code is written in [SageMath](https://www.sagemath.org).
+
+
+
+## One Example
+
+
+By writing the following command, you can compute one example of $(\ell,\ell)$-isogeny from $E_0\times E_0$. 
 
 ``` 
 % sage example.py
@@ -15,7 +24,7 @@ By writing the following command, you can compute $(\ell,\ell)$-isogeny from $E_
 
 Here, the base field is $\mathbb{F}_{p^2}$ where $p=276154505650672190920223$, $\ell=11$, and $E_0 : y^2=x^3+x$.
 
-The kernel $K\subset (E_0\times E_0)[\ell]$  is randomly generalted, and we write  a basis of $K$ by $e_1=(e_1^{(1)},e_1^{(2)}),e_2=(e_2^{(1)},e_2^{(2)})$.
+The kernel $K\subset (E_0\times E_0)[\ell]$  is ***randomly*** generalted, and we write  a basis of $K$ by $e_1=(e_1^{(1)},e_1^{(2)}),e_2=(e_2^{(1)},e_2^{(2)})$.
 
 Evaluating point is $x=(x^{(1)},0_{E_0})$ where $x^{(1)}\in E_0$ is a random point.
 
@@ -46,6 +55,10 @@ The output is as follows:
 
 
 
+## Author
+- Name: Ryo Yoshizumi 
+- Affiliation: Kyushu University
+- Email: yoshizumi.ryo.483@s.kyushu-u.ac.jp
 
 
 
